@@ -7,15 +7,15 @@ import CSSAlogo from '../assets/CSSA-Logo.png';
 
 class TopNavBar extends Component {
   render() {
+    
     return (
-      <div>
-        <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <Navbar bg="primary" variant="dark" expand="md">
           <Navbar.Brand>
                 <Image src={CSSAlogo} className="navbar-logo" fluid></Image>
           </Navbar.Brand>
-          <Navbar.Toggle data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          </Navbar.Toggle>
-          <Navbar.Collapse key="navbarColor01">
+          <Navbar.Toggle  aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link active href='#'>首页</Nav.Link>
               <NavDropdown id="#" title="组织构成">
@@ -54,10 +54,9 @@ class TopNavBar extends Component {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          
         </Navbar>
-      </div>
-    )
+
+     )
   }
 
 }
