@@ -6,6 +6,7 @@ The Trinity UI is the new React.js (TypeScript) based user interface for [myCSSA
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.<br>
@@ -33,3 +34,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Acknowledgement
 
 The CSS of this UI is inspired by Bootswatch Lumen
+

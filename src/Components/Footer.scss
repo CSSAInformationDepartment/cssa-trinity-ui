@@ -1,0 +1,13 @@
+@import '../variables';
+
+footer{
+    background-color: $primary;
+    color: $light;
+    .credit-bloc{
+        background-color: $dark;
+        .mg-md{
+            color: $light;
+        }
+    }
+}
+

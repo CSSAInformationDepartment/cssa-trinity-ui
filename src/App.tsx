@@ -3,11 +3,10 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 
 
 import logo from './logo.svg';
-import './App.css';
-import './bootstrap.min.css';
+import './App.scss';
 import Home from './Pages/Home'
 
-import TopNavBar from './Components/TopNavBar'
+import TopNavBar from './components/TopNavBar'
 
 
 class App extends Component {
