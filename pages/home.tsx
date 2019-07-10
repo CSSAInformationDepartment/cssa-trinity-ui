@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './home.scss'
+import './home.scss';
 import { HeadSection } from '../components/landing-sections/head';
 import { EventSection } from '../components/landing-sections/event';
 import { InfoSection } from '../components/landing-sections/info';
