@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import  '../components/landing-sections/Head';
 
-import './Home.scss'
-import { HeadSection } from '../components/landing-sections/Head';
-import { EventSection } from '../components/landing-sections/Event';
-import { InfoSection } from '../components/landing-sections/Info';
-import { AcademicSection } from '../components/landing-sections/Academic';
-import { LifestyleSection } from '../components/landing-sections/Lifestyle';
-import { AboutSection } from '../components/landing-sections/About';
-import { SponsorSection } from '../components/landing-sections/Sponsor';
-import { CareerSection } from '../components/landing-sections/Career';
+import './home.scss';
+import { HeadSection } from '../components/landing-sections/head';
+import { EventSection } from '../components/landing-sections/event';
+import { InfoSection } from '../components/landing-sections/info';
+import { AcademicSection } from '../components/landing-sections/academic';
+import { LifestyleSection } from '../components/landing-sections/lifestyle';
+import { AboutSection } from '../components/landing-sections/about';
+import { SponsorSection } from '../components/landing-sections/sponsor';
+import { CareerSection } from '../components/landing-sections/career';
 
-import { Footer } from '../components/Footer'
+import { Footer } from '../components/footer'
 import { any, string } from 'prop-types';
 
 export default class Home extends Component {

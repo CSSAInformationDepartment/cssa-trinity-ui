@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BaseSection from  './Base';
+import BaseSection from  './base';
 
 export class HeadSection extends Component {
     render() {

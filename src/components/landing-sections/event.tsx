@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import BaseSection from  './Base';
-import SectionTile from './Tile';
+import BaseSection from  './base';
+import SectionTile from './tile';
 import {Row, Col} from 'react-bootstrap';
 
 export class EventSection extends Component {
