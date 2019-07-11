@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BaseSection from  './base';
 import { Container, Row, Col, Card, Carousel, CarouselItem } from 'react-bootstrap';
 import CarouselCaption from 'react-bootstrap/CarouselCaption';
+import './lifestyle.scss';
 
 export class LifestyleSection extends Component {
     render() {
@@ -23,7 +24,7 @@ export class LifestyleSection extends Component {
                     4. 优惠券
                 </p> */}
 
-                <Container fluid={ true }>
+                <Container className="Content" fluid={ true }>
                     <Row>
                         <Col sm="8">
                             <Row>
@@ -58,14 +59,16 @@ export class LifestyleSection extends Component {
                                     </Card>
                                 </Col>
                                 <Col sm="3">
-                                    <div className="tile tile-blue">
-                                        更多详情
-                                    </div>
+                                    <Card>
+                                        <Card.Text>
+                                            更多
+                                        </Card.Text>
+                                    </Card>
                                 </Col>
                             </Row>
                         </Col>
 
-                        <Col sm={{span:3, offset: 1}}>
+                        <Col sm={{span:4}}>
                             <Card>
                                 <Card.Img src="/VEILs-Melbourne-Food-Map.png" />
                                 <Card.ImgOverlay>
