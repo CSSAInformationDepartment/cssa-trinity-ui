@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 export class LifestyleSection extends Component {
     render() {
@@ -21,71 +22,104 @@ export class LifestyleSection extends Component {
                     4. 优惠券
                 </p> */}
 
-                <div className="container">
-                    <div className="row mb-2">
-                        <div className="col-sm-6">
-                            <div className="row mb-2">
-                                <div className="col-6">
+                <Container>
+                    <Row>
+                        <Col sm="6">
+                            <Row>
+                                <Col>
                                     <div className="tile-blue">
-                                        <div className="card">
-                                            <img src={"/favicon.ico"}/>
-                                            <div className="card-img-overlay">
-                                                墨城攻略入口
-                                            </div>
-                                        </div>
+                                        <Card>
+                                            <Card.Img src="/favicon.ico" />
+                                            <Card.ImgOverlay>
+                                                <Card.Text>
+                                                    墨城攻略入口
+                                                </Card.Text>
+                                            </Card.ImgOverlay>
+                                        </Card>
                                     </div>
-                                </div>
-                                <div className="col-6">
+                                </Col>
+                                <Col>
                                     <div className="tile-blue">
-                                        <div className="card">
-                                            <img src={"/favicon.ico"}/>
-                                            <div className="card-img-overlay">
-                                                墨城攻略入口
-                                            </div>
-                                        </div>
+                                        <Card>
+                                            <Card.Img src="/favicon.ico" />
+                                            <Card.ImgOverlay>
+                                                <Card.Text>
+                                                    墨城攻略入口
+                                                </Card.Text>
+                                            </Card.ImgOverlay>
+                                        </Card>
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                                <Col>
+                                    <div className="tile-blue">
+                                        <Card>
+                                            <Card.Img src="/favicon.ico" />
+                                            <Card.ImgOverlay>
+                                                <Card.Text>
+                                                    墨城攻略入口
+                                                </Card.Text>
+                                            </Card.ImgOverlay>
+                                        </Card>
+                                    </div>
+                                </Col>
+                            </Row>
 
-                            <div className="row">
-                                <div className="col-6">
+                            <Row>
+                                <Col>
                                     <div className="tile-blue">
-                                        <div className="card">
-                                            <img src={"/favicon.ico"}/>
-                                            <div className="card-img-overlay">
-                                                墨城攻略入口
-                                            </div>
-                                        </div>
+                                        <Card>
+                                            <Card.Img src="/favicon.ico" />
+                                            <Card.ImgOverlay>
+                                                <Card.Text>
+                                                    墨城攻略入口
+                                                </Card.Text>
+                                            </Card.ImgOverlay>
+                                        </Card>
                                     </div>
-                                </div>
-                                <div className="col-6">
+                                </Col>
+                                <Col>
                                     <div className="tile-blue">
-                                        更多
+                                        <Card>
+                                            <Card.Img src="/favicon.ico" />
+                                            <Card.ImgOverlay>
+                                                <Card.Text>
+                                                    墨城攻略入口
+                                                </Card.Text>
+                                            </Card.ImgOverlay>
+                                        </Card>
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                                <Col>
+                                    <div className="tile-blue">
+                                        更多详情
+                                    </div>
+                                </Col>
+                            </Row>
+
                             
-                        </div>
-                        <div className="col-sm-6">
+                        </Col>
+
+                        <Col sm="6">
                             <div className="tile-blue">
                                 美食地图
                             </div>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
 
-                    <div className="row mb-2">
-                        <div className="col-sm-6">
+                    <Row>
+                        <Col sm="6">
                             <div className="tile-blue">
                                 折扣商家信息
                             </div>
-                        </div>
-                        <div className="col-sm-6">
+                        </Col>
+
+                        <Col sm="6">
                             <div className="tile-blue">
                                 优惠券
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
 
             </BaseSection>
         )
