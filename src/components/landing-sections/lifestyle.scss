@@ -6,3 +6,32 @@
         max-height:50%;
     }
 }
+
+.row.section-row {
+    height: 32vh;
+}
+
+.section-area {
+    border: 1px black solid;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
+
+    .card-group {
+        height: 100%;
+
+        .card {
+            max-height: 100%;
+        
+            img {
+                max-height: 80%;
+            }
+
+            .card-body {
+                max-height: 20%;
+            }
+        }
+    }
+}
+

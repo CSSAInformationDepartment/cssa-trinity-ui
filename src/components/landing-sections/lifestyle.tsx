@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
-import { Container, Row, Col, Card, Carousel, CarouselItem } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel, CarouselItem, CardGroup } from 'react-bootstrap';
 import CarouselCaption from 'react-bootstrap/CarouselCaption';
 import './lifestyle.scss';
 
@@ -11,20 +11,8 @@ export class LifestyleSection extends Component {
                 id="lifestyle" 
                 title= "墨城"
                 bgColor= "purple">
-                {/* <p>
-                    负责人：Nate、Jason
-                    页面内容摘要（发布前删除）：
-                    <br></br>
-                    1. 墨城攻略入口（热门条目快捷链接）
-                    <br></br>
-                    2. 美食地图
-                    <br></br>
-                    3. 折扣商家信息
-                    <br></br>
-                    4. 优惠券
-                </p> */}
 
-                <Container className="Content" fluid={ true }>
+                {/* <Container className="Content" fluid={ true }>
                     <Row>
                         <Col sm="8">
                             <Row>
@@ -98,7 +86,72 @@ export class LifestyleSection extends Component {
                             </div>
                         </Col>
                     </Row>
-                </Container>
+                </Container> */}
+
+            <Container fluid={ true }>
+                <Row className="section-row justify-content-center" noGutters={true}>
+                    <Col sm={8} className="melb-guide section-area  ">
+                        <CardGroup className="text-center">
+                            <Card>
+                                <Card.Img src="/favicon.ico" />
+                                <Card.Body>
+                                    <Card.Text>
+                                        墨城攻略入口
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+
+                            <Card>
+                                <Card.Img src="/favicon.ico" />
+                                <Card.Body>
+                                    <Card.Text>
+                                        墨城攻略入口
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+
+                            <Card>
+                                <Card.Img src="/favicon.ico" />
+                                <Card.Body>
+                                    <Card.Text>
+                                        墨城攻略入口
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+
+                            <Card>
+                                <Card.Text>
+                                    更多详情
+                                </Card.Text>
+                            </Card>
+                        </CardGroup>
+                        
+                    </Col>
+
+                    <Col sm={3} className="food-map section-area">
+                        <Card>
+                            <Card.Img src="/VEILs-Melbourne-Food-Map.png" />
+                            <Card.ImgOverlay>
+                                <Card.Text>
+                                    美食地图
+                                </Card.Text>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+
+                    <Col sm={5} className="sale-info section-area">
+                        {/* <div className="sale-info">
+
+                        </div> */}
+                    </Col>
+
+                    <Col sm={6} className="coupon section-area">
+                        {/* <div className="coupon">
+
+                        </div> */}
+                    </Col>
+                </Row>
+            </Container>
 
             </BaseSection>
         )
