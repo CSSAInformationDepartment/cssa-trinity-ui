@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel, CarouselItem } from 'react-bootstrap';
+import CarouselCaption from 'react-bootstrap/CarouselCaption';
 
 export class LifestyleSection extends Component {
     render() {
@@ -22,99 +23,74 @@ export class LifestyleSection extends Component {
                     4. 优惠券
                 </p> */}
 
-                <Container>
+                <Container fluid={ true }>
                     <Row>
-                        <Col sm="6">
+                        <Col sm="8">
                             <Row>
-                                <Col>
-                                    <div className="tile-blue">
-                                        <Card>
-                                            <Card.Img src="/favicon.ico" />
-                                            <Card.ImgOverlay>
-                                                <Card.Text>
-                                                    墨城攻略入口
-                                                </Card.Text>
-                                            </Card.ImgOverlay>
-                                        </Card>
-                                    </div>
+                                <Col sm="3">
+                                    <Card>
+                                        <Card.Img src="/favicon.ico" />
+                                        <Card.ImgOverlay>
+                                            <Card.Text>
+                                                墨城攻略入口
+                                            </Card.Text>
+                                        </Card.ImgOverlay>
+                                    </Card>
                                 </Col>
-                                <Col>
-                                    <div className="tile-blue">
-                                        <Card>
-                                            <Card.Img src="/favicon.ico" />
-                                            <Card.ImgOverlay>
-                                                <Card.Text>
-                                                    墨城攻略入口
-                                                </Card.Text>
-                                            </Card.ImgOverlay>
-                                        </Card>
-                                    </div>
+                                <Col sm="3">
+                                    <Card>
+                                        <Card.Img src="/favicon.ico" />
+                                        <Card.ImgOverlay>
+                                            <Card.Text>
+                                                墨城攻略入口
+                                            </Card.Text>
+                                        </Card.ImgOverlay>
+                                    </Card>
                                 </Col>
-                                <Col>
-                                    <div className="tile-blue">
-                                        <Card>
-                                            <Card.Img src="/favicon.ico" />
-                                            <Card.ImgOverlay>
-                                                <Card.Text>
-                                                    墨城攻略入口
-                                                </Card.Text>
-                                            </Card.ImgOverlay>
-                                        </Card>
-                                    </div>
+                                <Col sm="3">
+                                    <Card>
+                                        <Card.Img src="/favicon.ico" />
+                                        <Card.ImgOverlay>
+                                            <Card.Text>
+                                                墨城攻略入口
+                                            </Card.Text>
+                                        </Card.ImgOverlay>
+                                    </Card>
                                 </Col>
-                            </Row>
-
-                            <Row>
-                                <Col>
-                                    <div className="tile-blue">
-                                        <Card>
-                                            <Card.Img src="/favicon.ico" />
-                                            <Card.ImgOverlay>
-                                                <Card.Text>
-                                                    墨城攻略入口
-                                                </Card.Text>
-                                            </Card.ImgOverlay>
-                                        </Card>
-                                    </div>
-                                </Col>
-                                <Col>
-                                    <div className="tile-blue">
-                                        <Card>
-                                            <Card.Img src="/favicon.ico" />
-                                            <Card.ImgOverlay>
-                                                <Card.Text>
-                                                    墨城攻略入口
-                                                </Card.Text>
-                                            </Card.ImgOverlay>
-                                        </Card>
-                                    </div>
-                                </Col>
-                                <Col>
-                                    <div className="tile-blue">
+                                <Col sm="3">
+                                    <div className="tile tile-blue">
                                         更多详情
                                     </div>
                                 </Col>
                             </Row>
-
-                            
                         </Col>
 
-                        <Col sm="6">
-                            <div className="tile-blue">
-                                美食地图
-                            </div>
+                        <Col sm={{span:3, offset: 1}}>
+                            <Card>
+                                <Card.Img src="/VEILs-Melbourne-Food-Map.png" />
+                                <Card.ImgOverlay>
+                                    <Card.Text>
+                                        美食地图
+                                    </Card.Text>
+                                </Card.ImgOverlay>
+                            </Card>
                         </Col>
                     </Row>
 
                     <Row>
                         <Col sm="6">
-                            <div className="tile-blue">
-                                折扣商家信息
-                            </div>
+                            <Carousel>
+                                <CarouselItem>
+                                    <img src="/VEILs-Melbourne-Food-Map.png"/>
+                                    <CarouselCaption>
+                                        折扣商家信息
+                                    </CarouselCaption>
+                                </CarouselItem>
+                            </Carousel>
                         </Col>
 
                         <Col sm="6">
-                            <div className="tile-blue">
+                            <div className="tile tile-blue">
                                 优惠券
                             </div>
                         </Col>
