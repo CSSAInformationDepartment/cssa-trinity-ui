@@ -93,37 +93,38 @@ export class LifestyleSection extends Component {
                     <Col sm={8} className="melb-guide section-area  ">
                         <CardGroup className="text-center">
                             <Card>
-                                <Card.Img src="/favicon.ico" />
-                                <Card.Body>
-                                    <Card.Text>
-                                        墨城攻略入口
-                                    </Card.Text>
-                                </Card.Body>
+                                <a href="123">
+                                    <Card.Img  src="/favicon.ico" />
+                                    <Card.ImgOverlay>
+                                        <h2>墨城攻略入口</h2>
+                                    </Card.ImgOverlay>
+                                </a>
                             </Card>
 
                             <Card>
-                                <Card.Img src="/favicon.ico" />
-                                <Card.Body>
-                                    <Card.Text>
-                                        墨城攻略入口
-                                    </Card.Text>
-                                </Card.Body>
+                                <a href="123">
+                                    <Card.Img  src="/favicon.ico" />
+                                    <Card.ImgOverlay>
+                                        <h2>墨城攻略入口</h2>
+                                    </Card.ImgOverlay>
+                                </a>
                             </Card>
 
                             <Card>
-                                <Card.Img src="/favicon.ico" />
-                                <Card.Body>
-                                    <Card.Text>
-                                        墨城攻略入口
-                                    </Card.Text>
-                                </Card.Body>
+                                <a href="123">
+                                    <Card.Img  src="/favicon.ico" />
+                                    <Card.ImgOverlay>
+                                        <h2>墨城攻略入口</h2>
+                                    </Card.ImgOverlay>
+                                </a>
                             </Card>
 
                             <Card>
-                                <Card.Text>
-                                    更多详情
-                                </Card.Text>
+                                <a href="123">
+                                    <Card.Text>更多信息</Card.Text>
+                                </a>
                             </Card>
+                            
                         </CardGroup>
                         
                     </Col>
