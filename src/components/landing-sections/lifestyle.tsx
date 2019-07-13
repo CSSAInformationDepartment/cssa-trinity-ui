@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
-import { Container, Row, Col, Card, Carousel, CarouselItem, CardGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel, CarouselItem, CardGroup} from 'react-bootstrap';
 import CarouselCaption from 'react-bootstrap/CarouselCaption';
 import './lifestyle.scss';
 
@@ -120,8 +120,8 @@ export class LifestyleSection extends Component {
                             </Card>
 
                             <Card>
-                                <a href="123">
-                                    <Card.Text className="more">更多信息</Card.Text>
+                                <a className="more" href="123">
+                                    <Card.Text >更多信息</Card.Text>
                                 </a>
                             </Card>
                             
@@ -142,7 +142,6 @@ export class LifestyleSection extends Component {
 
                     <Col sm={5} className="sale-info section-area">
                         <Carousel>
-                            
                             <CarouselItem>
                                 <img src="/VEILs-Melbourne-Food-Map.png"/>
                                 <CarouselCaption>
@@ -159,9 +158,34 @@ export class LifestyleSection extends Component {
                     </Col>
 
                     <Col sm={6} className="coupon section-area">
-                        {/* <div className="coupon">
-
-                        </div> */}
+                        <div className="scrollable-coupon-menu">
+                            <Card className="coupon-template bg-info">
+                                <img src="/favicon.ico" className="card-img-left"/>
+                                <Card.ImgOverlay>
+                                    <Card.Text>
+                                        50%
+                                    </Card.Text>
+                                </Card.ImgOverlay>
+                                <Card.Body>
+                                    <h6>title</h6>
+                                    <p>description</p>
+                                </Card.Body>
+                                <a className="btn btn-primary" role="button" href="123">领取</a>
+                            </Card>
+                            <Card className="coupon-template bg-info">
+                                <img src="/favicon.ico" className="card-img-left"/>
+                                <Card.ImgOverlay>
+                                    <Card.Text>
+                                        50%
+                                    </Card.Text>
+                                </Card.ImgOverlay>
+                                <Card.Body>
+                                    <h6>title</h6>
+                                    <p>description</p>
+                                </Card.Body>
+                                <a className="btn btn-primary" role="button" href="123">领取</a>
+                            </Card>
+                        </div>
                     </Col>
                 </Row>
             </Container>
