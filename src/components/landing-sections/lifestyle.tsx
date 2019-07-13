@@ -121,7 +121,7 @@ export class LifestyleSection extends Component {
 
                             <Card>
                                 <a href="123">
-                                    <Card.Text>更多信息</Card.Text>
+                                    <Card.Text className="more">更多信息</Card.Text>
                                 </a>
                             </Card>
                             
@@ -141,9 +141,21 @@ export class LifestyleSection extends Component {
                     </Col>
 
                     <Col sm={5} className="sale-info section-area">
-                        {/* <div className="sale-info">
-
-                        </div> */}
+                        <Carousel>
+                            
+                            <CarouselItem>
+                                <img src="/VEILs-Melbourne-Food-Map.png"/>
+                                <CarouselCaption>
+                                    折扣商家信息
+                                </CarouselCaption>
+                            </CarouselItem>
+                            <CarouselItem>
+                                <img src="/VEILs-Melbourne-Food-Map.png"/>
+                                <CarouselCaption>
+                                    折扣商家信息
+                                </CarouselCaption>
+                            </CarouselItem>
+                        </Carousel>
                     </Col>
 
                     <Col sm={6} className="coupon section-area">
