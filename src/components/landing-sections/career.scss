@@ -1,3 +1,8 @@
+hr{ 
+  height: 2px;    
+  color: black; 
+}
+
 .carousel {
     
     max-height: 100%;
@@ -18,6 +23,7 @@
         margin: auto;
     }
 }
+
 
 /*reference: change of carousel label idea from TrinitA on StackOverFlow*/
 .carousel-control-prev-icon,

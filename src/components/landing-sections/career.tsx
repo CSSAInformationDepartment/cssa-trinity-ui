@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
-import { Container, Row, Col, CardDeck, Card, Button, Carousel } from 'react-bootstrap'
+import { CardDeck, Card, Button, Carousel } from 'react-bootstrap'
 import './career.scss'
 
 export class CareerSection extends Component {
@@ -11,15 +11,17 @@ export class CareerSection extends Component {
                 title= "职场"
                 bgColor= "info">
                 <p>
-                    负责人：Judy, Chloe
-                    <br></br>
-                    页面内容摘要（发布前删除）：
-                    <br></br>
-                    1. 当前开放岗位
-                    <br></br>
-                    2. 求职相关信息
-
-                </p>  
+                    
+                        {/*负责人：Judy, Chloe*/}
+                    
+                
+                </p> 
+                
+                <hr></hr>
+                    <h3>当前热招</h3>
+                <hr></hr><br></br>
+                
+    
                 {/*establishing carousels to show more jobs*/}
                 <Carousel>
                     
@@ -121,6 +123,7 @@ export class CareerSection extends Component {
                         </CardDeck>
                     </Carousel.Item>
                 </Carousel>
+                <br></br>
                 <br></br>
                 <br></br>
                 {/*browse more jobs button at the bottom of the carousel*/}
