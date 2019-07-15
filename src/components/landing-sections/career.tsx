@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BaseSection from  './base';
 import { CardDeck, Card, Button, Carousel, Col, Row, Container } from 'react-bootstrap'
 import './career.scss'
+import CareerInfo from './career-info'
 
 export class CareerSection extends Component {
     render() {
@@ -31,21 +32,15 @@ export class CareerSection extends Component {
                     <Carousel.Item>
                         {/*4 cards in the first page of carousel*/}
                         <CardDeck>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
 
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
 
+<<<<<<< HEAD
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="holder.js/100px180" />
                                 <Card.Header>
@@ -63,78 +58,22 @@ export class CareerSection extends Component {
                                     <Button variant="primary">Learn more</Button>
                                 </Card.Body>
                             </Card>
-
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
-                        </CardDeck>
-
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        {/*4 cards on the last page of carousel */}
-                        <CardDeck>
-
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
-
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
-
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
+=======
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
+>>>>>>> 873e8064d46aa7fcd5e646713b68ff8bde4ebd47
 
                         </CardDeck>
+
                     </Carousel.Item>
                 </Carousel>
-                <br></br>
-                <br></br>
-                <br></br>
                 {/*browse more jobs button at the bottom of the carousel*/}
+<<<<<<< HEAD
                 <Button href = "#" variant = "link">查看更多</Button>
+=======
+                <Button href = "" variant = "link">查看更多</Button>
+>>>>>>> 873e8064d46aa7fcd5e646713b68ff8bde4ebd47
             </Col>
             
             <Col>
@@ -144,6 +83,7 @@ export class CareerSection extends Component {
                         <h5>相关信息</h5>
                     </Card.Header>
                     <Card.Body>
+<<<<<<< HEAD
                         <p>
                         关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
 用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
@@ -152,6 +92,8 @@ export class CareerSection extends Component {
 用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
 用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。                                  
                         </p>
+=======
+>>>>>>> 873e8064d46aa7fcd5e646713b68ff8bde4ebd47
                     </Card.Body>
                 </Card>
             </Col>
