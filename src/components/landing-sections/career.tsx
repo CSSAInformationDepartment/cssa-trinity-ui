@@ -26,25 +26,30 @@ export class CareerSection extends Component {
 
                 {/*establishing carousels to show more jobs*/}
                 <Tabs defaultActiveKey="career" id="career-information">
-                    <Tab eventKey="career" title="所有热招岗位">
+                    <Tab eventKey="career" title="精选热招岗位">
+                    <br></br>
                     <br></br>
                     <CarouselInfo />
                     </Tab>
                     <Tab eventKey="CSSA" title="CSSA岗位">
                     <br></br>
+                    <br></br>
                     <CarouselInfo />
                     </Tab>
                     <Tab eventKey="voluntary" title="志愿者工作">
                     <br></br>
+                    <br></br>
                     <CarouselInfo />
                     </Tab>
                     <Tab eventKey="others" title="其他">
+                    <br></br>
                     <br></br>
                     <CarouselInfo />
                     </Tab>
                 </Tabs>
                 
                 {/*browse more jobs button at the bottom of the carousel*/}
+                <br></br>
                 <Button href = "" variant = "link">查看更多</Button>
             </Col>
             
