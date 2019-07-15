@@ -1,33 +1,44 @@
-// .img-container{
-
-//     img{
-//       max-width:100%;
-//       min-height: 100%;
-//       overflow: hidden;
-//       opacity: 0.7;
-//     }
-//     h3{
-//       color: black;
-//       padding: 50px;
-  
-//     }
-//     a{
-//       color: blue;
-//     }
-//   }
 
   .card{
-      width:300px;
-      height:300px;
+      width:200px;
+      height:200px;
       background-color: none;
+      margin:5%;
+      border-color:black;
+
+      .card-title{
+
+          color:white;
+          padding:20%;
+      }
+      
+
+      .card-img{
+        height: 100%;
+        opacity: 0.75; 
+    }
+
+      .a{
+          padding:2%;
+      }
+      
+      
   }
 
 //   .card-img-overlay{
 //       width:30%;
 //       height:30%；
 //   }
+  
 
-  .card-img{
-      height: 100%;
-      opacity: 0.8;
+
+  .card:hover{ 
+      .card-img{
+        height: 100%;
+        opacity: 0.2;
+      }
   }
+
+
+  
+  

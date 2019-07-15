@@ -5,6 +5,7 @@ import library from "./library.jpg";
 import guide from "./guide.png";
 import calendar from"./aca_cal.jpg";
 import "./academic.scss";
+import PicButton from "./pic-button";
 // import {Container} from 'react-bootstrap';
 // import {Row} from 'react-bootstrap';
 // import {Col} from 'react-bootstrap'
@@ -57,53 +58,38 @@ export class AcademicSection extends Component {
                     </div> */}
 
                     <div className="container">
-                        <div className="row mx-lg-n5 align-items-center">
-                            <div className="col-sm ">
-                                <div className="card bg-dark text-white" style={{ width: '18rem'}}>
-                                    <img src={guide} className="card-img" alt = "..."></img>
-                                        <div className="card-img-overlay">
-                                            <div className="text-center">
-                                                <h3 className = "card-title">墨城攻略</h3>
-                                                <a className="card-link" href="www.google.com">website</a>
-                                                <p></p>
-                                                <button className="btn btn-light">More</button>
-                                            </div>
-                                        </div>
-                                </div>
+                        <div className="row mx-lg-n5 justify-content-md-center">
+                            <div className="col-sm">
+                                <PicButton
+                                        imageSrc={guide}
+                                        imageTitle="墨城"
+                                        buttonLink="www.google.com"
+                                        buttonName="more" >
+
+                                    </PicButton>
                             </div>
                             <div className="col-sm">
-                                    <div className="card bg-dark text-white" style={{ width: '18rem'}}>
+                                <PicButton
+                                    imageSrc={library}
+                                    imageTitle="图书馆"
+                                    buttonLink="www.google.com"
+                                    buttonName="more" >
+
+                                </PicButton>
+                            </div>
+                            <div className="col-sm">
+                                <PicButton
+                                    imageSrc={calendar}
+                                    imageTitle="学习中"
+                                    buttonLink="www.google.com"
+                                    buttonName="more" >
+
+                                </PicButton>
+                            </div>
+                             <div className="col-sm">
+                                    {/* <div className="card bg-dark text-white" >
                                         <img src={library} className="card-img" alt = "..."></img>
                                             <div className="card-img-overlay">
-                                                <div className="text-center">
-                                                    <h3 className = "card-title" >图书馆</h3>
-                                                    <a className="card-link" href="www.google.com">Library website</a>
-                                                    <p></p>
-                                                    <button className="btn btn-light">More</button>
-                                                </div>      
-                                            </div>
-                                    </div>
-                            </div>
-                            <div className="col-sm">
-                                    <div className="card text-white">
-                                        <img src={calendar} className="card-img" alt = "..."></img>
-                                            <div className="card-img-overlay">
-                                                <div className="text-center">
-                                                    <h3 className = "card-title">Academic Calendar中文版</h3>
-                                                    <a className="card-link" href="www.google.com">Library website</a>
-                                                    <p></p>
-                                                    <button className="btn btn-light">More</button>
-                                                </div>      
-                                            </div>
-                                    </div>
-                            </div>
-                            <div className="col-sm">
-                                    <div className="card bg-dark text-white" >
-                                
-                                        <img src={library} className="card-img" alt = "..."></img>
-                                        
-                                            <div className="card-img-overlay">
-                                                
                                                     <h3 className = "card-title" >LMS 入口</h3>
                                                     <a className="card-link" href="www.google.com">LMS website</a>
                                                     <p></p>
@@ -111,73 +97,61 @@ export class AcademicSection extends Component {
 
                                                    
                                         </div>
-                                    </div>
-                            </div>
+                                    </div> */}
+                                     {/* <PicButton
+                                    imageSrc={calendar}
+                                    imageTitle="LMS入口"
+                                    buttonLink="www.google.com"
+                                    buttonName="more" >
+
+                                </PicButton> */}
+                            </div> 
                         </div>
                     </div>
 
-                    <div className="row mx-lg-n5">
-                        <div className="col-sm py-3 px-lg-5">
-                    
-                        </div>
-                    </div>
 
                     <div className="container">
                         <div className="row mx-lg-n5 align-items-center">
-                            <div className="col-sm ">
-                                <div className="card bg-dark text-white" >
-                                    <img src={library} className="card-img" alt = "..."></img>
-                                        <div className="card-img-overlay">
-                                            <div className="text-center">
-                                                <h3 className = "card-title">墨城攻略</h3>
-                                                <a className="card-link" href="www.google.com">website</a>
-                                                <p></p>
-                                                <button className="btn btn-light">More</button>
-                                            </div>
-                                        </div>
-                                </div>
+                            <div className="col-sm">
+                                <PicButton
+                                    imageSrc={guide}
+                                    imageTitle="墨城"
+                                    buttonLink="www.google.com"
+                                    buttonName="more" >
+
+                                </PicButton>
                             </div>
                             <div className="col-sm">
-                                    <div className="card bg-dark text-white" style={{ width: '18rem'}}>
-                                        <img src={library} className="card-img" alt = "..."></img>
-                                            <div className="card-img-overlay">
-                                                <div className="text-center">
-                                                    <h3 className = "card-title" >图书馆</h3>
-                                                    <a className="card-link" href="www.google.com">Library website</a>
-                                                    <p></p>
-                                                    <button className="btn btn-light">More</button>
-                                                </div>      
-                                            </div>
-                                    </div>
+                            <PicButton
+                                    imageSrc={library}
+                                    imageTitle="图书馆"
+                                    buttonLink="www.google.com"
+                                    buttonName="more" >
+
+                                </PicButton>
                             </div>
                             <div className="col-sm">
-                                    <div className="card bg-dark text-white" style={{ width: '18rem'}}>
-                                        <img src={library} className="card-img" alt = "..."></img>
-                                            <div className="card-img-overlay">
-                                                <div className="text-center">
-                                                    <h3 className = "card-title" >图书馆</h3>
-                                                    <a className="card-link" href="www.google.com">Library website</a>
-                                                    <p></p>
-                                                    <button className="btn btn-light">More</button>
-                                                </div>      
-                                            </div>
-                                    </div>
+                                    <PicButton
+                                    imageSrc={library}
+                                    imageTitle="图书馆"
+                                    buttonLink="www.google.com"
+                                    buttonName="more" >
+
+                                </PicButton>
                             </div>
                             <div className="col-sm">
-                                    <div className="card bg-dark text-white" style={{ width: '18rem'}}>
-                                        <img src={library} className="card-img" alt = "..."></img>
-                                            <div className="card-img-overlay">
-                                                <div className="text-center">
-                                                    <h3 className = "card-title" >图书馆</h3>
-                                                    <a className="card-link" href="www.google.com">Library website</a>
-                                                    <p></p>
-                                                    <button className="btn btn-light">More</button>
-                                                </div>      
-                                            </div>
-                                    </div>
+                                {/* <PicButton
+                                        imageSrc={library}
+                                        imageTitle="图书馆"
+                                        buttonLink="www.google.com"
+                                        buttonName="more" >
+
+                                    </PicButton> */}
+                                    
                             </div>
                         </div>
                     </div>
+                    
 
 
                     
