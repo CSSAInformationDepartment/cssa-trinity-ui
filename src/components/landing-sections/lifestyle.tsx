@@ -94,7 +94,7 @@ export class LifestyleSection extends Component {
                         <CardGroup className="text-center">
                             <Card>
                                 <a href="123">
-                                    <Card.Img  src="/favicon.ico" />
+                                    <Card.Img  src="/strategy.jpg" />
                                     <Card.ImgOverlay>
                                         <h2>墨城攻略入口</h2>
                                     </Card.ImgOverlay>
@@ -103,7 +103,7 @@ export class LifestyleSection extends Component {
 
                             <Card>
                                 <a href="123">
-                                    <Card.Img  src="/favicon.ico" />
+                                    <Card.Img  src="/strategy.jpg" />
                                     <Card.ImgOverlay>
                                         <h2>墨城攻略入口</h2>
                                     </Card.ImgOverlay>
@@ -112,7 +112,7 @@ export class LifestyleSection extends Component {
 
                             <Card>
                                 <a href="123">
-                                    <Card.Img  src="/favicon.ico" />
+                                    <Card.Img  src="/strategy.jpg" />
                                     <Card.ImgOverlay>
                                         <h2>墨城攻略入口</h2>
                                     </Card.ImgOverlay>
@@ -121,7 +121,8 @@ export class LifestyleSection extends Component {
 
                             <Card>
                                 <a className="more" href="123">
-                                    <Card.Text >更多信息</Card.Text>
+                                    <Card.Text>更多</Card.Text>
+                                    <Card.Text>信息</Card.Text>
                                 </a>
                             </Card>
                             
@@ -131,35 +132,43 @@ export class LifestyleSection extends Component {
 
                     <Col sm={3} className="food-map section-area">
                         <Card>
-                            <Card.Img src="/VEILs-Melbourne-Food-Map.png" />
-                            <Card.ImgOverlay>
-                                <Card.Text>
-                                    美食地图
-                                </Card.Text>
-                            </Card.ImgOverlay>
+                            <a href="123">
+                                <Card.Img src="/VEILs-Melbourne-Food-Map.png" />
+                                <Card.ImgOverlay>
+                                    <Card.Text>
+                                        美食
+                                    </Card.Text>
+                                    <Card.Text>
+                                        地图
+                                    </Card.Text>
+                                </Card.ImgOverlay>
+                            </a>
                         </Card>
                     </Col>
 
                     <Col sm={5} className="sale-info section-area">
                         <Carousel>
                             <CarouselItem>
-                                <img src="/VEILs-Melbourne-Food-Map.png"/>
+                                <img src="/restaurant.jpg"/>
                                 <CarouselCaption>
-                                    折扣商家信息
+                                    折扣商家1
                                 </CarouselCaption>
                             </CarouselItem>
                             <CarouselItem>
                                 <img src="/VEILs-Melbourne-Food-Map.png"/>
                                 <CarouselCaption>
-                                    折扣商家信息
+                                    折扣商家2
                                 </CarouselCaption>
                             </CarouselItem>
                         </Carousel>
                     </Col>
 
                     <Col sm={6} className="coupon section-area">
+                        <div className="header">
+                            <h2>优惠券</h2>
+                        </div>
                         <div className="scrollable-coupon-menu">
-                            <Card className="coupon-template bg-info">
+                            <Card className="coupon-template">
                                 <img src="/favicon.ico" className="card-img-left"/>
                                 <Card.ImgOverlay>
                                     <Card.Text>
@@ -170,9 +179,9 @@ export class LifestyleSection extends Component {
                                     <h6>title</h6>
                                     <p>description</p>
                                 </Card.Body>
-                                <a className="btn btn-primary" role="button" href="123">领取</a>
+                                <a className="btn" role="button" href="123">领取</a>
                             </Card>
-                            <Card className="coupon-template bg-info">
+                            <Card className="coupon-template">
                                 <img src="/favicon.ico" className="card-img-left"/>
                                 <Card.ImgOverlay>
                                     <Card.Text>
@@ -180,10 +189,10 @@ export class LifestyleSection extends Component {
                                     </Card.Text>
                                 </Card.ImgOverlay>
                                 <Card.Body>
-                                    <h6>title</h6>
+                                    <h5>title</h5>
                                     <p>description</p>
                                 </Card.Body>
-                                <a className="btn btn-primary" role="button" href="123">领取</a>
+                                <a className="btn" role="button" href="123">领取</a>
                             </Card>
                         </div>
                     </Col>
