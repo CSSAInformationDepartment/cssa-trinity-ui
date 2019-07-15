@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
-import { CardDeck, Card, Button, Carousel } from 'react-bootstrap'
+import { CardDeck, Card, Button, Carousel, Col, Row, Container } from 'react-bootstrap'
 import './career.scss'
 
 export class CareerSection extends Component {
@@ -17,9 +17,12 @@ export class CareerSection extends Component {
                 
                 </p> 
                 
-                <hr></hr>
-                    <h3>当前热招</h3>
-                <hr></hr><br></br>
+                <Container>
+                    <Row>
+                        <Col xs={9}>
+                            <hr></hr>
+                            <h3>当前热招</h3>
+                            <hr></hr><br></br>
                 
     
                 {/*establishing carousels to show more jobs*/}
@@ -52,6 +55,10 @@ export class CareerSection extends Component {
                                 <Card.Body>
                                     <Card.Text>
                                      - The brief introduction of the job
+                                     放轻松。大家都希望和朋友自在地相处，随时能开开玩笑，这样很有安全感。要是你想表现得好相处，就要放轻松，让大家也觉得轻松愉快。
+赞美别人。表示你的关心和专注。
+多笑。使用大方的肢体动作，让别人感觉你放得开。
+尽量放轻松。假如你紧张，你的朋友也会紧张，所以要放轻松。
                                     </Card.Text>
                                     <Button variant="primary">Learn more</Button>
                                 </Card.Body>
@@ -128,7 +135,28 @@ export class CareerSection extends Component {
                 <br></br>
                 {/*browse more jobs button at the bottom of the carousel*/}
                 <Button href = "#" variant = "link">查看更多</Button>
-             
+            </Col>
+            
+            <Col>
+                
+                <Card>
+                    <Card.Header>
+                        <h5>相关信息</h5>
+                    </Card.Header>
+                    <Card.Body>
+                        <p>
+                        关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
+用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
+用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
+用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
+用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。关注你的朋友。不玩手机，和朋友进行眼神交流，让他们感觉受重视。假如你分神，看起来心不在焉，那你身边的人就无法放松，也无法觉得有趣了。
+用眼神表示肯定。不要让别人觉得你自视清高或在评判他们，不然他们在你身边会很拘谨。                                  
+                        </p>
+                    </Card.Body>
+                </Card>
+            </Col>
+            </Row>
+            </Container>   
             </BaseSection>
         )
     }
