@@ -43,32 +43,11 @@ export class CareerSection extends Component {
                             <CareerInfo
                                 CareerWebsite=""
                                 CompanyLogo=""/>
-                                
+
                         </CardDeck>
 
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        {/*4 cards on the last page of carousel */}
-                        <CardDeck>
-                            <CareerInfo
-                                CareerWebsite=""
-                                CompanyLogo=""/>
-
-                            <CareerInfo
-                                CareerWebsite=""
-                                CompanyLogo=""/>
-
-                            <CareerInfo
-                                CareerWebsite=""
-                                CompanyLogo=""/>
-                         
-                        </CardDeck>
                     </Carousel.Item>
                 </Carousel>
-                <br></br>
-                <br></br>
-                <br></br>
                 {/*browse more jobs button at the bottom of the carousel*/}
                 <Button href = "" variant = "link">查看更多</Button>
             </Col>
