@@ -5,6 +5,13 @@
   color: black;
 }
 
+.container{
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 2vh;
+}
+
 .carousel {
     
     max-height: 100%;
@@ -42,6 +49,22 @@
     }
   }
 
+  .card {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    img {
+      max-width:100%;
+      height: 15vh;
+      margin: auto;
+    }
+  }
+
+  .card-body {
+      height: 30vh;
+      overflow: scroll;
+  }
+
 
 /*reference: change of carousel label idea from TrinitA on StackOverFlow*/
 .carousel-control-prev-icon,
@@ -67,3 +90,4 @@
   font-size: 55px;
   color: grey;
 }
+
