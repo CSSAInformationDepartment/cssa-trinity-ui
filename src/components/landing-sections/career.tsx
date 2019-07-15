@@ -21,20 +21,25 @@ export class CareerSection extends Component {
                 <Container>
                     <Row>
                         <Col xs={9}>
-                            <hr></hr>
-                            <h3>当前热招</h3>
-                            <hr></hr><br></br>
+                            
                 
 
                 {/*establishing carousels to show more jobs*/}
-                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-                    <Tab eventKey="home" title="Home">
+                <Tabs defaultActiveKey="career" id="career-information">
+                    <Tab eventKey="career" title="所有热招岗位">
+                    <br></br>
                     <CarouselInfo />
                     </Tab>
-                    <Tab eventKey="home" title="Home">
+                    <Tab eventKey="CSSA" title="CSSA岗位">
+                    <br></br>
                     <CarouselInfo />
                     </Tab>
-                    <Tab eventKey="home" title="Home">
+                    <Tab eventKey="voluntary" title="志愿者工作">
+                    <br></br>
+                    <CarouselInfo />
+                    </Tab>
+                    <Tab eventKey="others" title="其他">
+                    <br></br>
                     <CarouselInfo />
                     </Tab>
                 </Tabs>
