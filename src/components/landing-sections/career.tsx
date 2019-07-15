@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BaseSection from  './base';
 import { CardDeck, Card, Button, Carousel, Col, Row, Container } from 'react-bootstrap'
 import './career.scss'
+import CareerInfo from './career-info'
 
 export class CareerSection extends Component {
     render() {
@@ -31,48 +32,18 @@ export class CareerSection extends Component {
                     <Carousel.Item>
                         {/*4 cards in the first page of carousel*/}
                         <CardDeck>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
 
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
 
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
-
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
+                                
                         </CardDeck>
 
                     </Carousel.Item>
@@ -80,49 +51,18 @@ export class CareerSection extends Component {
                     <Carousel.Item>
                         {/*4 cards on the last page of carousel */}
                         <CardDeck>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
 
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
 
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
-
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Header>
-                                    <h3>Job title</h3>
-                                    <Card.Text>Company</Card.Text>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                     - The brief introduction of the job
-                                    </Card.Text>
-                                    <Button variant="primary">Learn more</Button>
-                                </Card.Body>
-                            </Card>
-
+                            <CareerInfo
+                                CareerWebsite=""
+                                CompanyLogo=""/>
+                         
                         </CardDeck>
                     </Carousel.Item>
                 </Carousel>
@@ -130,7 +70,7 @@ export class CareerSection extends Component {
                 <br></br>
                 <br></br>
                 {/*browse more jobs button at the bottom of the carousel*/}
-                <Button href = "#" variant = "link">查看更多</Button>
+                <Button href = "" variant = "link">查看更多</Button>
             </Col>
             
             <Col>

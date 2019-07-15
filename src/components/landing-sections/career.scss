@@ -1,4 +1,4 @@
-hr{ 
+.hr{ 
   height: 2px;  
   width: 100%;
   margin: 0;
@@ -16,13 +16,25 @@ hr{
     }
 }
 
+.container{
+  margin:0;
+  max-height:80%
+}
 
 .card-deck{
     max-height: 100%;
     max-width: 80%;
     margin: auto;
-    button {
-        margin: auto;
+
+    .card {
+      width: 100%;
+      height: 100%;
+      
+    }
+    
+    .card-text {
+        height: 100px;
+        overflow: scroll;
     }
 }
 
