@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import BaseSection from  './base';
-import { CardDeck, Card, Button, Carousel, Col, Row, Container } from 'react-bootstrap'
+import { CardDeck, Card, Button, Carousel, Col, Row, Container, Tabs, Tab } from 'react-bootstrap'
 import './career.scss'
-import CareerInfo from './career-info'
+import CarouselInfo from './carousel-info'
 
 export class CareerSection extends Component {
     render() {
@@ -25,29 +25,20 @@ export class CareerSection extends Component {
                             <h3>当前热招</h3>
                             <hr></hr><br></br>
                 
-    
+
                 {/*establishing carousels to show more jobs*/}
-                <Carousel>
-                    
-                    <Carousel.Item>
-                        {/*4 cards in the first page of carousel*/}
-                        <CardDeck>
-                            <CareerInfo
-                                CareerWebsite=""
-                                CompanyLogo=""/>
-
-                            <CareerInfo
-                                CareerWebsite=""
-                                CompanyLogo=""/>
-
-                            <CareerInfo
-                                CareerWebsite=""
-                                CompanyLogo=""/>
-
-                        </CardDeck>
-
-                    </Carousel.Item>
-                </Carousel>
+                <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                    <Tab eventKey="home" title="Home">
+                    <CarouselInfo />
+                    </Tab>
+                    <Tab eventKey="home" title="Home">
+                    <CarouselInfo />
+                    </Tab>
+                    <Tab eventKey="home" title="Home">
+                    <CarouselInfo />
+                    </Tab>
+                </Tabs>
+                
                 {/*browse more jobs button at the bottom of the carousel*/}
                 <Button href = "" variant = "link">查看更多</Button>
             </Col>
