@@ -127,7 +127,7 @@ export class CareerSection extends Component {
                 <br></br>
                 <br></br>
                 {/*browse more jobs button at the bottom of the carousel*/}
-                <Button href = "#" variant = "link">Browse more jobs</Button>
+                <Button href = "#" variant = "link">查看更多</Button>
              
             </BaseSection>
         )
